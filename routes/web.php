@@ -19,4 +19,5 @@ Route::get('/', function () {
 });
 
 
-Route::get('/chunk/log', [ChunkController::class, 'log']);
+Route::get('/log/chunk', [ChunkController::class, 'logChunk']);
+Route::get('/log/chunkById', [ChunkController::class, 'logChunkById']);
